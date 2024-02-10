@@ -1,0 +1,4 @@
+{
+  "extends": ["@figmania/eslint-config"],
+  "parserOptions": { "project": "tsconfig.json" }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": ["@figmania/eslint-config"],
+  "parserOptions": { "project": "tsconfig.json" },
+  "rules": {
+    "@stylistic/padding-line-between-statements": "off"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2020",
+    "module": "CommonJS",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "declaration": true,
+    "composite": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@atomicbi/etl": ["./packages/etl"],
+      "@atomicbi/etl-example": ["./packages/example"],
+      "@atomicbi/etl-plugin-drive": ["./packages/plugin-drive"],
+      "@atomicbi/etl-plugin-elastic": ["./packages/plugin-/elastic"],
+      "@atomicbi/etl-plugin-gcs": ["./packages/plugin-gcs"],
+      "@atomicbi/etl-plugin-tika": ["./packages/plugin-tika"],
+      "@atomicbi/etl-plugin-vertex": ["./packages/plugin-vertex"]
+    }
+  },
+  "references": [
+    { "path": "packages/etl" },
+    { "path": "packages/example" },
+    { "path": "packages/plugin-drive" },
+    { "path": "packages/plugin-elastic" },
+    { "path": "packages/plugin-gcs" },
+    { "path": "packages/plugin-tika" },
+    { "path": "packages/plugin-vertex" }
+  ]
+}

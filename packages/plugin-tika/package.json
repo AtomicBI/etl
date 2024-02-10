@@ -1,0 +1,26 @@
+{
+  "name": "@atomicbi/etl-plugin-tika",
+  "version": "1.0.0",
+  "description": "Atomic BI Tika ETL Transformer",
+  "license": "MIT",
+  "author": { "name": "tobias.strebitzer@atomic.bi" },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atomicbi/etl.git",
+    "directory": "packages/tika"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "tsc -b",
+    "prepack": "yarn clean && yarn build",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@atomicbi/etl": "1.0.0",
+    "tika-js": "^1.0.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@atomicbi/etl",
+  "private": true,
+  "description": "Atomic BI Knowledge Dataset",
+  "license": "MIT",
+  "author": { "name": "tobias.strebitzer@atomic.bi" },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atomicbi/etl.git"
+  },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "prepack": "lerna run prepack",
+    "lint": "lerna run lint",
+    "packages:publish": "yarn prepack && lerna publish --concurrency 1 --force-publish"
+  },
+  "devDependencies": {
+    "@figmania/eslint-config": "^1.0.0",
+    "@types/node": "^20.11.17",
+    "lerna": "^8.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2"
+  }
+}

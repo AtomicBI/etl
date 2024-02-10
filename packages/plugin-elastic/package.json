@@ -1,0 +1,32 @@
+{
+  "name": "@atomicbi/etl-plugin-elastic",
+  "version": "1.0.0",
+  "description": "Atomic BI Elastic ETL Transformer",
+  "license": "MIT",
+  "author": {
+    "name": "tobias.strebitzer@atomic.bi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atomicbi/etl.git",
+    "directory": "packages/elastic"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "tsc -b",
+    "prepack": "yarn clean && yarn build",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@atomicbi/etl": "1.0.0",
+    "@elastic/elasticsearch": "^8.12.1",
+    "@google-cloud/aiplatform": "^3.11.0",
+    "tika-js": "^1.0.1"
+  },
+  "devDependencies": {}
+}

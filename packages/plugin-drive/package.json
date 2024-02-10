@@ -1,0 +1,31 @@
+{
+  "name": "@atomicbi/etl-plugin-drive",
+  "version": "1.0.0",
+  "description": "Atomic BI Google Drive Plugin",
+  "license": "MIT",
+  "author": {
+    "name": "tobias.strebitzer@atomic.bi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atomicbi/etl.git",
+    "directory": "packages/plugin-drive"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "tsc -b",
+    "prepack": "yarn clean && yarn build",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@atomicbi/etl": "1.0.0",
+    "@google-cloud/storage": "^7.7.0",
+    "@googleapis/drive": "^8.7.0"
+  },
+  "devDependencies": {}
+}

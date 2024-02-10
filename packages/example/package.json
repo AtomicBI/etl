@@ -1,0 +1,30 @@
+{
+  "name": "@atomicbi/etl-example",
+  "version": "1.0.0",
+  "description": "Atomic BI ETL Example",
+  "license": "MIT",
+  "author": { "name": "tobias.strebitzer@atomic.bi" },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/atomicbi/etl.git",
+    "directory": "packages/example"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "tsc -b",
+    "prepack": "yarn clean && yarn build",
+    "lint": "eslint 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@atomicbi/etl": "1.0.0",
+    "@atomicbi/etl-plugin-drive": "1.0.0",
+    "@atomicbi/etl-plugin-gcs": "1.0.0",
+    "@atomicbi/etl-plugin-tika": "1.0.0",
+    "@atomicbi/etl-plugin-vertex": "1.0.0",
+    "googleapis": "^131.0.0"
+  },
+  "devDependencies": {}
+}

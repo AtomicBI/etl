@@ -1,0 +1,37 @@
+{
+  "editor.rulers": [80],
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/build": true,
+    "**/node_modules": true,
+  },
+  "eslint.workingDirectories": [
+    "packages/etl",
+    "packages/example",
+    "packages/plugin-drive",
+    "packages/plugin-elastic",
+    "packages/plugin-gcs",
+    "packages/plugin-tika",
+    "packages/plugin-vertex"
+  ],
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.semicolons": "remove",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "eslint.run": "onType",
+  "eslint.nodePath": "./node_modules",
+  "json.format.enable": false,
+  "eslint.validate": ["javascript", "typescript"]
+}
